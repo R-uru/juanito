@@ -1,0 +1,51 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: #000;
+}
+.container {
+  overflow: hidden;
+  width: 250px;
+  height: 300px;
+  border:1px solid grey;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-70%);
+}
+.title {
+  color: white;
+  font-weight: 600;
+  font-family:"poppins", Sans-Serif;
+  position: absolute;
+  left: 50%;
+  bottom: 30%;
+  transform: translate(-50%,-50%);
+}
+p {
+  font-size: 6px;
+  margin: 0;
+  padding: 0;
+  line-height: 8px;
+  text-align: justify;
+  background: url(3.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(225, 225, 255,0);
+}
+span {
+  /*-webkit-text-fill-color: rgba(255, 255, 255,0);*/
+  animation-name: fade;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out 20s;
+}
+@keyframes fade{
+0%{
+  -webkit-text-fill-color: rgba(255, 255, 255,0);}
+100%{
+  -webkit-text-fill-color: rgba(200,15,0,.9);
+}}
