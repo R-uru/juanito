@@ -2,10 +2,6 @@ body{
   margin: 0;
   padding: 0;
   background: #000;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%) scale(2);
 }
 .container {
   overflow: hidden;
